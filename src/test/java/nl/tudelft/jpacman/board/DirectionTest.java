@@ -8,6 +8,9 @@ import org.junit.jupiter.api.Test;
  */
 public class DirectionTest {
 
+    /**
+     * Tests North
+     */
     @Test
     void testNorth() {
         Direction north = Direction.valueOf("NORTH");
@@ -15,6 +18,9 @@ public class DirectionTest {
         assertThat(north.getDeltaY()).isEqualTo(-1);
     }
 
+    /**
+     * Tests South
+     */
     @Test
     void testSouth() {
         Direction south = Direction.valueOf("SOUTH");
@@ -22,6 +28,9 @@ public class DirectionTest {
         assertThat(south.getDeltaY()).isEqualTo(1);
     }
 
+    /**
+     * Tests East
+     */
     @Test
     void testEast() {
         Direction east = Direction.valueOf("EAST");
@@ -29,6 +38,9 @@ public class DirectionTest {
         assertThat(east.getDeltaY()).isEqualTo(0);
     }
 
+    /**
+     * Tests West
+     */
     @Test
     void testWest() {
         Direction west = Direction.valueOf("WEST");
